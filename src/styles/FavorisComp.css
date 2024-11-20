@@ -1,0 +1,17 @@
+.favoriteStar {
+    text-decoration: none;
+    color: #F86700;
+    position: absolute;
+    right: 14%;
+    top: 12%;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+.favoriteText {
+    text-decoration: none;
+    color: #F86700;
+    position: absolute;
+    right: 13%;
+    top: 17%;
+}

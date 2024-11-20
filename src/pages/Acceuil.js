@@ -5,7 +5,6 @@ const Acceuil = () => {
     return (
         <div>
             <Header />
-            
         </div>
     )
 }
