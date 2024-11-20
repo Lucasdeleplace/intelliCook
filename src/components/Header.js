@@ -5,7 +5,9 @@ const Header = () => {
     return (
         <header>
             <div>
-                <h1>🍝 IntelliCOOOOOOOOK 🍝</h1>
+                <div className="mysteryRecipe">
+                    <p className="mysteryRecipe">Découvrez la recette mystère du jour !</p>
+                </div>
             </div>
         </header>
     )
