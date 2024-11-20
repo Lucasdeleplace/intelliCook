@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
+import "../styles/Search.css";
 
 const Search = () => {
     const [search, setSearch] = useState('');
 
     const handleSearch = (e) => {
-        console.log(e.target.value);
-        
         setSearch(e.target.value);
     }
 
@@ -15,8 +14,8 @@ const Search = () => {
 
     return (
         <div>
-            <input value={search} onChange={handleSearch} type="text" placeholder="Chercher une recette, un ingrédient" />
-            <button onClick={handledelete}>x</button>
+            <input value={search} onChange={handleSearch} type="text" placeholder="Chercher une recette, un ingrédient" className="searchInput"></input>
+            <p onClick={handledelete} className='searchDelete'>🔍</p>
         </div>
     );
 }

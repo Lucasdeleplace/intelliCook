@@ -6,6 +6,7 @@ const FavorisComp = () => {
     return (
         <div>
             <Link to="/favoris" className="favoriteStar">★</Link>
+            <Link to="/favoris" className="favoriteText">favorite</Link>
         </div>
     )
 }

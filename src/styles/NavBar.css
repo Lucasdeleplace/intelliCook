@@ -1,0 +1,13 @@
+.navListAll {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 1%;
+    background-color: #FFE799;
+}
+
+.navList {
+    text-decoration: none;
+    color: black;
+}
