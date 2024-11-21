@@ -9,6 +9,7 @@
     margin: 0;
 }
 .favoriteText {
+    font-family: "Fugaz One";
     text-decoration: none;
     color: #F86700;
     position: absolute;
