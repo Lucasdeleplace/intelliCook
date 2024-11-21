@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Acceuil />} />
-        <Route path='/favoris' element={<Favoris />} />
-        <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Acceuil />} />
+          <Route path='/favoris' element={<Favoris />} />
+          <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

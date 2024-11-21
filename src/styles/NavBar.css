@@ -4,10 +4,11 @@
     text-decoration: none;
     justify-content: space-around;
     padding: 1%;
-    background-color: #FFE799;
+    background-color: #C1A149;
 }
 
 .navList {
+    font-family: "Fugaz One";
     text-decoration: none;
     color: black;
 }

@@ -1,17 +1,28 @@
 header {
   text-align: center;
-  font-family: "Love Ya Like A Sister", cursive;
+}
+
+.headerLogo {
+  font-family: "Euphoria Script", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 .mysteryRecipe {
-    background-color: #8B51E1;
+    background-color: #C1A149;
     padding: 10px;
     margin: 0;
 }
 
 .headerTitle {
-    background-color: #FFF3CC;
+    background-color: #000;
     padding: 30px;
+}
+
+.DarkMode {
+    position: absolute;
+    font-size: 2em;
+    right: 4%;
+    top: 13.3%;
+    cursor: pointer;
 }
