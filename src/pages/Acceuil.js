@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
 import FavorisComp from "../components/FavorisComp";
-import Footer from "../components/Footer";
+import Card from "../components/card";
 
 
 const Acceuil = () => {
     return (
         <div>
             <Header />
-            <Footer />
             <FavorisComp />
+            <Card /> 
         </div>
     )
 }
