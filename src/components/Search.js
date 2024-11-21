@@ -13,7 +13,7 @@ const Search = () => {
     }
 
     return (
-        <div>
+        <div className='allSearch'>
             <input value={search} onChange={handleSearch} type="text" placeholder="Chercher une recette, un ingrédient" className="searchInput"></input>
             <p onClick={handledelete} className='searchDelete'>🔍</p>
         </div>

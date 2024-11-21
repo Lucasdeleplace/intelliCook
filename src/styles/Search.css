@@ -2,22 +2,17 @@
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 10px;
-    width: 40%;
+    /* width: 40%; */
 }
+
 .searchDelete {
-    position : absolute;
+    /* position : absolute;
     right: 31%;
-    top: 14%;
+    top: 14%; */
     cursor: pointer;
 }
-.headerFav {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.headerLogo {
-    position: absolute;
-    color: #F86700;
-    left: 1%;
-    top: 14%;
+
+.allSearch {
+    display: flex;
+    flex-direction: row;
 }

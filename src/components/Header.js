@@ -1,6 +1,6 @@
 import React from "react";
 import Search from "./Search"
-import '../styles/Header.css';
+import '../styles/Header_new.css';
 import FavorisComp from "./FavorisComp";
 import NavBar from "./NavBar";
 
@@ -26,6 +26,7 @@ const Header = () => {
                     <div className="DarkMode" onClick={handleClick}>{luna}</div>
                 </div>
                 <div className="headerMenu">
+                    
                     <NavBar />
                 </div>
             </div>
