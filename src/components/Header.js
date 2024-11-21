@@ -18,7 +18,6 @@ const Header = () => {
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
-
     console.log(result);
   };
 
@@ -27,7 +26,6 @@ const Header = () => {
   };
 
   const result = data.filter((recipe) => {
-    console.log(recipe);
     return (
         recipe.name.toLowerCase().includes(search.toLowerCase()) || recipe.ingredients.some((ingredient) => ingredient.ingredient.toLowerCase().includes(search.toLowerCase())
       )
