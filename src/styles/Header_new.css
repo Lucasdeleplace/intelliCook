@@ -1,11 +1,35 @@
 .mysteryRecipe {
-    background-color: blueviolet;
+    background-color: beige;
     text-align: center;
+    padding: 1% 0;
+    cursor: pointer;
 }
 
 .headerTitle {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    background-color: #c5c592;
+    color: #292725;
+    padding: 2% 0;
+}
+
+.headerLogo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.DarkMode {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size:x-large;
+    margin-top: 0.4rem;
+    width: 2.5%;
+    height: 2.5%; 
+}
+
+.soleil {
+    background-color: blue;
 }
