@@ -1,11 +1,17 @@
 import React from "react";
+import imgdejeuner from "../assets/imgdejeuner.png"
+import imgplat from "../assets/imgplat.png"
+import imgsalade from "../assets/imgsalade.png"
+import imgapero from "../assets/imgapero.jpg"
+import imgrigolo from "../assets/imgrigolo.png"
+import imgdesert from "../assets/imgdesert.png"
 const cards = [
-  { id: 1, title: "Petits déjeuners", img: "/images/petits-dejeuners.jpg" },
-  { id: 2, title: "Plats principaux", img: "/images/plats-principaux.jpg" },
-  { id: 3, title: "Salades", img: "/images/salades.jpg" },
-  { id: 4, title: "Apéritifs", img: "/images/aperitifs.jpg" },
-  { id: 5, title: "Plats rigolos", img: "/images/plats-rigolos.jpg" },
-  { id: 6, title: "Desserts", img: "/images/desserts.jpg" },
+  { id: 1, title: "Petits déjeuners", img:  (imgdejeuner)},
+  { id: 2, title: "Plats principaux", img:(imgplat)},
+  { id: 3, title: "Salades", img: (imgsalade)},
+  { id: 4, title: "Apéritifs", img:(imgapero) },
+  { id: 5, title: "Plats rigolos", img: (imgrigolo)},
+  { id: 6, title: "Dessert", img: (imgdesert)},
 ];
 
 const Cards = () => {
