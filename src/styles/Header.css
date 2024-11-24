@@ -17,6 +17,7 @@ header {
 .headerTitle {
     background-color: #000;
     padding: 30px;
+    position: relative;
 }
 
 .DarkMode {
@@ -26,14 +27,31 @@ header {
     top: 13.3%;
     cursor: pointer;
 }
+
 .headerFav {
   position: absolute;
   right: 0;
   top: 0;
 }
+
 .headerLogo {
   position: absolute;
   color: #F86700;
   left: 1%;
   top: 14%;
+}
+
+.searchAndFilterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchContainer {
+  width: 40%;
+}
+
+.ingredientSelect {
+  width: 40%;
 }
