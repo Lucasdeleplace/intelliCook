@@ -1,7 +1,7 @@
 // src/components/FavoritesContext.js
 import React, { createContext, useState, useEffect } from 'react';
 
-const fav = JSON.parse(localStorage.getItem('favorites')) || [];
+const fav = JSON.parse(localStorage.getItem('favorites')) || []; 
 
 export const FavoritesContext = createContext();
 
