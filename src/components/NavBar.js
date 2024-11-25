@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <nav>
             <ul className="navListAll">
-                <li><Link to="/" className="navList">🌟Noel🎄</Link></li>
+                <li><Link to="/" className="navListNoel">🌟Noel🎄</Link></li>
                 <li><Link to="/" className="navList">Types de plats</Link></li>
                 <li><Link to="/" className="navList">Collation</Link></li>
                 <li><Link to="/" className="navList">Apéros</Link></li>

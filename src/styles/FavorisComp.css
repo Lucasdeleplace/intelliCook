@@ -1,6 +1,7 @@
 .favoriteStar {
     text-decoration: none;
-    color: rgb(255, 162, 0); 
+    color: #efc966;
+    /* background-color: red;   */
     /* position: absolute; */
     /* right: 14%;
     top: 12%; */
@@ -14,10 +15,12 @@
 .favoriteText {
     
     /* font-family: "Fugaz One"; */
+    margin-left: 29%;
     font-weight: bold;
     font-size: large;
     text-decoration: none; 
     color: #292725;
+    /* background-color: blue; */
     /* text-shadow : 0.1em 0.1em 0.1em beige; */
      
     /* position: absolute; */
@@ -27,8 +30,8 @@
     flex-direction: row; */
 }
 
-div {
+.favoris {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    /* background-color: aqua; */
 }

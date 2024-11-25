@@ -3,6 +3,7 @@
     text-align: center;
     padding: 1% 0;
     cursor: pointer;
+    color: #292725;
 }
 
 .headerTitle {
@@ -29,7 +30,16 @@
     width: 2.5%;
     height: 2.5%; 
 }
+ 
+.lune {
+    /* background-color: blue; */
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.9rem;
+    margin-right: 1rem;
+} 
 
-.soleil {
-    background-color: blue;
+header {
+    position:fixed;
+    width: 100%;
 }

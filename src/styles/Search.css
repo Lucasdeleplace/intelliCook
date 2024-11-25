@@ -10,7 +10,7 @@
 .searchDelete {
     cursor: pointer;
     position: absolute;
-    align-self: center;
+    align-self: center; 
     padding-right: 1em;
     width: 2.2%;
     height: 2.2%; 

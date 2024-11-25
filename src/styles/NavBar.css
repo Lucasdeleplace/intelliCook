@@ -8,8 +8,13 @@
 }
 
 .navList {
-    /* font-family: "Fugaz One"; */
     font-weight: bold;
     text-decoration: none;
     color: beige;
 }
+
+.navListNoel {
+    font-weight: bold;
+    text-decoration: none;
+    color: #c1143f;
+} 
