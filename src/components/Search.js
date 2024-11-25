@@ -1,18 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "../styles/Search.css";
 import loupe from '../assets/694985.png';
 
-const Search = () => {
-    const [search, setSearch] = useState('');
-
-    const handleSearch = (e) => {
-        setSearch(e.target.value);
-    }
-
-    const handledelete = () => {
-        setSearch('');
-    }
-
+const Search = ({handleSearch, search, handledelete}) => {
     return (
         <div className='allSearch'>
             <input value={search} onChange={handleSearch} type="text" placeholder="Chercher une recette, un ingrédient" className="searchInput"></input>

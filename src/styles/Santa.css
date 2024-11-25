@@ -1,0 +1,23 @@
+.Santa {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../assets/promofont.png");
+    padding : 4%;
+    font-family: "Flavors", cursive;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.Santa-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.Santa-button {
+    color: white;
+    background-color: black;
+    margin : auto;
+    padding: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}

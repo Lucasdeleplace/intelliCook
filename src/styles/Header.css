@@ -34,3 +34,14 @@ header {
     top: 13.3%;
     cursor: pointer;
 }
+.headerFav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.headerLogo {
+  position: absolute;
+  color: #F86700;
+  left: 1%;
+  top: 14%;
+}
