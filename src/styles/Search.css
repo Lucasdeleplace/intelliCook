@@ -1,0 +1,26 @@
+.searchInput {
+    border-radius: 20rem;
+    border: 1px solid #ccc;
+    width: 35em;
+    padding-left: 4%;
+    /* padding: 7%; */
+    /* width: 80%; */
+}
+
+.searchDelete {
+    cursor: pointer;
+    position: absolute;
+    align-self: center;
+    padding-right: 1em;
+    width: 2.2%;
+    height: 2.2%; 
+    /* text-align: center; */
+}
+
+
+
+.allSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
