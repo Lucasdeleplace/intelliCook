@@ -1,3 +1,8 @@
+.searchContainer {
+  width: 40%;
+  position: relative;
+}
+
 .searchInput {
     border-radius: 20rem;
     border: 1px solid #ccc;
@@ -17,10 +22,9 @@
     /* text-align: center; */
 }
 
-
-
 .allSearch {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
+
