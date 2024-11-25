@@ -8,6 +8,7 @@ import RecipeCard from "./RecipeCard";
 import data from "../data/recipe.json";
 import lune from '../assets/lune.png';
 import soleil from '../assets/soleil2.png';
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [luna, setLuna] = React.useState(soleil);
@@ -86,6 +87,9 @@ const Header = () => {
   
     const shouldShowResults = search.length > 0 || includeIngredients.length > 0 || excludeIngredients.length > 0;
   
+    const goHome = () => {
+      window.location.href = "/";
+    }
 
     return (
       <header>
@@ -96,7 +100,7 @@ const Header = () => {
             </p>
           </div>
           <div className="headerTitle">
-            <h1 className="headerLogo">IntelliCooooooook</h1>
+            <h1 onClick={goHome} className="headerLogo">IntelliCooooooook</h1>
             
             <div className="searchAndFilterContainer">
               <div className="searchContainer">
