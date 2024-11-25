@@ -1,73 +1,57 @@
-import React, { useState } from "react";
-import Search from "./Search";
-import "../styles/Header.css";
+import React from "react";
+import Search from "./Search"
+import '../styles/Header_new.css';
 import FavorisComp from "./FavorisComp";
 import NavBar from "./NavBar";
-import data from "../data/recipe.json";
+import lune from '../assets/lune.png';
+import soleil from '../assets/soleil2.png';
 
 const Header = () => {
-  const [luna, setLuna] = useState("☀️");
-  const [search, setSearch] = useState("");
-  const handleClick = () => {
-    if (luna === "☀️") {
-      setLuna("🌙");
-    } else {
-      setLuna("☀️");
+    const [luna, setLuna] = React.useState(soleil);
+    const handleClick = () => {
+        if (luna === soleil) {
+            setLuna(lune);
+            document.querySelector(".DarkMode").classList.add("lune");
+            document.querySelector(".DarkMode").classList.remove("soleil");
+        } else {
+            setLuna(soleil);
+            document.querySelector(".DarkMode").classList.add("soleil");
+            document.querySelector(".DarkMode").classList.remove("lune");
+        }
     }
-  };
+    // const handleClick = () => {
+    //     if (luna === "☀️") {
+    //       setLuna("🌙");
+    //       document.querySelector(".DarkMode").classList.add("lune");
+    //       document.querySelector(".DarkMode").classList.remove("soleil");
+    //     } else {
+    //       setLuna("☀️");
+    //       document.querySelector(".DarkMode").classList.add("soleil");
+    //       document.querySelector(".DarkMode").classList.remove("lune");
+    //     }
+    //   };
 
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-    console.log(result);
-  };
-
-  const handledelete = () => {
-    setSearch("");
-  };
-
-  const result = data.filter((recipe) => {
     return (
-        recipe.name.toLowerCase().includes(search.toLowerCase()) || recipe.ingredients.some((ingredient) => ingredient.ingredient.toLowerCase().includes(search.toLowerCase())
-      )
-    );
-  });
+        <header>
+            <div>
+                <div className="mysteryRecipe">
+                    <p className="mysteryRecipe">✨🕵️‍♀️ Découvrez la recette mystère du jour ! 🕵️‍♂️✨</p>
+                    
+                </div>
+                <div className="headerTitle">
+                    <h1 className="headerLogo">IntelliCooooooook</h1>
+                    <Search />
+                    <FavorisComp />
+                    <img src = {luna} className="DarkMode" onClick={handleClick}/>
+                </div>
+                <div className="headerMenu">
+                    
+                    <NavBar />
+                </div>
+            </div>
+        </header>
+    )
+}
 
-  return (
-    <header>
-      <div>
-        <div className="mysteryRecipe">
-          <p className="mysteryRecipe">
-            ✨🕵️‍♀️ Découvrez la recette mystère du jour ! 🕵️‍♂️✨
-          </p>
-        </div>
-        <div className="headerTitle">
-          <h1 className="headerLogo">IntelliCooooooook</h1>
-          <Search
-            handleSearch={handleSearch}
-            handledelete={handledelete}
-            search={search}
-          />
-          <FavorisComp />
-          <div className="DarkMode" onClick={handleClick}>
-            {luna}
-          </div>
-        </div>
-        <div className="headerMenu">
-          <NavBar />
-        </div>
-        <div className="resultSearch">
-            { search.length > 0 ? <p>{result.length} recettes disponibles</p> : null }
-          { search.length > 0 ? result.map((recipe) => {
-            return (
-              <div>
-                <p>{recipe.name}</p>
-              </div>
-            );
-          }) : null}
-        </div>
-      </div>
-    </header>
-  );
-};
 
 export default Header;

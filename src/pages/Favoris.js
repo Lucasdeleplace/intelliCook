@@ -17,4 +17,4 @@ const Favoris = () => {
     )
 }
 
-export default Favoris;
+export default Favoris; 

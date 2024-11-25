@@ -4,9 +4,9 @@ import '../styles/FavorisComp.css';
 
 const FavorisComp = () => { 
     return (
-        <div>
+        <div className="favoris">
             <Link to="/favoris" className="favoriteStar">★</Link>
-            <Link to="/favoris" className="favoriteText">favorite</Link>
+            <Link to="/favoris" className="favoriteText">Favoris</Link>
         </div>
     )
 }
