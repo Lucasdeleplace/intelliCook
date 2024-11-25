@@ -4,9 +4,13 @@ header {
 }
 
 .headerLogo {
-  font-family: "Euphoria Script", cursive;
+  font-family: "Euphoria Script";
   font-weight: 400;
   font-style: normal;
+  position: absolute;
+  color: #F86700;
+  left: 1%;
+  top: 14%;
 }
 
 .mysteryRecipe {
@@ -17,8 +21,11 @@ header {
 
 .headerTitle {
     background-color: #000;
-    padding: 30px;
-    position: relative;
+    padding: 20px;
+}
+
+.headerFav {
+
 }
 
 .DarkMode {
