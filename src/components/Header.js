@@ -91,12 +91,12 @@ const Header = () => {
       <header>
         <div>
           <div className="mysteryRecipe">
-            <p className="mysteryRecipe">
+            <p>
               ✨🕵️‍♀️ Découvrez la recette mystère du jour ! 🕵️‍♂️✨
             </p>
           </div>
           <div className="headerTitle">
-            <h1 className="headerLogo">IntelliCooooooook</h1>
+            <h1 className="headerLogo">Kitschen</h1>
             
             <div className="searchAndFilterContainer">
               <div className="searchContainer">

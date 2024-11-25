@@ -4,14 +4,14 @@
     text-decoration: none;
     justify-content: space-around;
     padding: 1%;
-    background-color: #838363;
+    background-color: beige;
     margin: 0;
 }
 
 .navList {
     font-weight: bold;
     text-decoration: none;
-    color: beige;
+    color: #292725;
 }
 
 .navListNoel {

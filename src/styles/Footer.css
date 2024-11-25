@@ -1,7 +1,7 @@
 
 
 .elementsFooter {
-    background-color: #838363;
+    background-color: beige;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,16 +17,16 @@
 
 .copyright {
     /* background-color: beige; */
-    background-color: #838363;
+    background-color: beige;
     text-align: center;
     margin:0; 
     color: #292725;
     padding-bottom: 3%;
 }
 
-button {
-    background-color: #efc966;
-    color: white;
+.boutonHaut {
+    background-color: #ee8634;
+    color: #292725;
     border-radius: 60rem;
     border-style: none;
     /* margin: 3%; */
@@ -34,46 +34,52 @@ button {
     padding-bottom: 5%;
     padding-top: 5%;
     cursor: pointer; 
-    opacity: 0.6;
-    transition: 0.3s;   
+    opacity: 0.8;
+    transition: 0.3s;
+    
 }
 
-button:hover {
-    background-color: #efc966;
+.boutonHaut:hover {
+    background-color: #ee8634;
     opacity: 1;
-    color: white;
+    color: #292725; 
     
 }
 
 
-h2 {
-    color: #292725;
-    cursor: pointer;
-}
-
 .pFooter {
-    color: beige;
+    color: #292725;
     margin-top: 1rem;
 }
 
 .titreApropos, .titreInfos {
-    color: #efc966;
+    /* color: #efc966; */
+    color: #ee8634;
+    cursor: pointer;
+   
 }
 
 .apropos {
     /* background-color: aqua; */
     width: 23%;
+    margin-right: 12%;
+    cursor: pointer;
 }
 
 .infos {
     /* background-color: pink; */
     width: 23%;
+    margin-right: 12%;
+    cursor: pointer;
 }
 
-.titre {
+.titreLogo {
     /* background-color: orange; */ 
-    width: 50%;
-
+    /* width: 50%; */
+    margin-left: 3.5%;
+    font-family: "Pacifico", cursive;
+    color: #ee8634;
+    cursor: pointer;
 }
 
 /* .YouTube {
@@ -91,5 +97,6 @@ h2 {
 
 .cuisinez {
     margin-top: 1rem;
-    color:beige;
+    margin-left: 3.1%;
+    color:#292725; 
 }

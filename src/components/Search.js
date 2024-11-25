@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/Search.css";
-import loupe from '../assets/694985.png';
+import loupe from '../assets/croix.png';
 
 const Search = ({handleSearch, search, handledelete}) => {
     return (

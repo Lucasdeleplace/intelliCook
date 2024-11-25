@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="elementsFooter">
       <div className="titre">
-        <h2 className="titre">intelliCooooooook</h2>
+        <h2 className="titreLogo">Kitschen</h2>
         <p className="cuisinez">Cuisinez avec nous, on est sympas !</p>
         <div className="logos">
           {["Instagram", "Facebook", "YouTube"].map((platform) => (
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       <div className="boutonHaut">
         
-        <button
+        <button className="boutonHaut"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           Haut de la page !
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         </div>
         <div>
-        <p className="copyright">------------------------------------------------ <br/><br/> 2024 © intelliCooooooook<br/></p>
+        <p className="copyright">------------------------------------------------ <br/><br/> 2024 © Kitschen<br/></p>
       </div>
     </footer>
   );

@@ -1,15 +1,16 @@
 .recipe-card {
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 2rem;
     margin: 16px;
-    background-color: #fff;
+    padding: 4%;
+    background-color: #edca91;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
   }
   
   .recipe-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
@@ -25,3 +26,15 @@
   .recipe-details {
     margin-top: 16px;
   }
+
+  .boutonfavs {
+    border-radius: 15px;
+    border-style: none; 
+    padding: 12.3px;
+    cursor: pointer;
+  }
+
+  .boutonfavs:hover {
+    background-color: beige;
+    transform: scale(1.06);
+}

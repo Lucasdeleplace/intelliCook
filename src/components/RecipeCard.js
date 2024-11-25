@@ -27,7 +27,7 @@ const RecipeCard = ({ recipe }) => {
     <div className="recipe-card" onClick={handleClick}>
       <h2>{recipe.name}</h2>
       <p>Temps de préparation: {recipe.time} minutes</p>
-      <button onClick={handleFavoriteClick}>
+      <button className="boutonfavs" onClick={handleFavoriteClick}>
         {isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
       </button>
     </div>
