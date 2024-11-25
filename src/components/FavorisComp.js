@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../styles/FavorisComp.css';
 import { FavoritesContext } from "./FavoritesContext";
 
+
 const FavorisComp = () => {
   const { favorites } = useContext(FavoritesContext);
 

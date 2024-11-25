@@ -4,16 +4,27 @@
 }
 
 .searchInput {
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 100%;
+    border-radius: 20rem;
+    border: 1px solid #ccc;
+    width: 35em;
+    padding-left: 4%;
+    /* padding: 7%; */
+    /* width: 80%; */
 }
 
 .searchDelete {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+    cursor: pointer;
+    position: absolute;
+    align-self: center; 
+    padding-right: 1em;
+    width: 2.2%;
+    height: 2.2%; 
+    /* text-align: center; */
 }
+
+.allSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
