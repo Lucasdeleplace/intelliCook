@@ -1,3 +1,4 @@
+// src/components/FavoritesContext.js
 import React, { createContext, useState, useEffect } from 'react';
 
 export const FavoritesContext = createContext();
@@ -15,11 +16,19 @@ const FavoritesProvider = ({ children }) => {
   }, [favorites]);
 
   const addFavorite = (recipe) => {
-    setFavorites([...favorites, recipe]);
+    setFavorites((prevFavorites) => {
+      const updatedFavorites = [...prevFavorites, recipe];
+      localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+      return updatedFavorites;
+    });
   };
 
   const removeFavorite = (recipeId) => {
-    setFavorites(favorites.filter((recipe) => recipe.id !== recipeId));
+    setFavorites((prevFavorites) => {
+      const updatedFavorites = prevFavorites.filter((recipe) => recipe.id !== recipeId);
+      localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+      return updatedFavorites;
+    });
   };
 
   return (

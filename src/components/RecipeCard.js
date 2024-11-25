@@ -1,7 +1,8 @@
+// src/components/RecipeCard.js
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/RecipeCard.css";
-import { FavoritesContext } from "../contexts/FavoritesContext";
+import { FavoritesContext } from "./FavoritesContext";
 
 const RecipeCard = ({ recipe }) => {
   const navigate = useNavigate();

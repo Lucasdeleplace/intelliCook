@@ -1,3 +1,4 @@
+// src/components/Header.js
 import React, { useState } from "react";
 import Select from "react-select";
 import Search from "./Search";
@@ -76,6 +77,7 @@ const Header = () => {
         </div>
         <div className="headerTitle">
           <h1 className="headerLogo">IntelliCooooooook</h1>
+          <FavorisComp />
           <div className="searchAndFilterContainer">
             <div className="searchContainer">
               <Search
@@ -101,7 +103,6 @@ const Header = () => {
               className="ingredientSelect"
             />
           </div>
-          <FavorisComp />
           <div className="DarkMode" onClick={handleClick}>
             {luna}
           </div>

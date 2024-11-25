@@ -12,10 +12,15 @@ const RecipeDetail = () => {
     return <p>Recette non trouvée</p>;
   }
 
+  const takeBack = () => {
+    window.history.back();
+  };
+
   return (
     <>
     <Header />
     <div className="recipe-detail">
+      <p onClick={takeBack}>back</p>
       <h2>{recipe.name}</h2>
       <p>Temps de préparation: {recipe.time} minutes</p>
       <p>Ingrédients:</p>
