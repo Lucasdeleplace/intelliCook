@@ -14,15 +14,15 @@
 } 
 .favoriteText {
     /* font-family: "Fugaz One"; */
-    margin-left: 29%;
+    /* margin-left: 29%; */
     font-weight: bold;
     font-size: large;
     text-decoration: none; 
     color: #292725;
     /* background-color: blue; */
     /* text-shadow : 0.1em 0.1em 0.1em beige; */
-     
-    /* position: absolute; */
+
+    position: absolute;
     /* right: 13%;
     top: 17%; */
     /* display: flex;
