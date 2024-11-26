@@ -26,18 +26,7 @@ const Header = () => {
             document.querySelector(".DarkMode").classList.add("soleil");
             document.querySelector(".DarkMode").classList.remove("lune");
         }
-    }
-    // const handleClick = () => {
-    //     if (luna === "☀️") {
-    //       setLuna("🌙");
-    //       document.querySelector(".DarkMode").classList.add("lune");
-    //       document.querySelector(".DarkMode").classList.remove("soleil");
-    //     } else {
-    //       setLuna("☀️");
-    //       document.querySelector(".DarkMode").classList.add("soleil");
-    //       document.querySelector(".DarkMode").classList.remove("lune");
-    //     }
-    //   };
+    };
     const handleSearch = (e) => {
       setSearch(e.target.value);
     };
@@ -129,7 +118,7 @@ const Header = () => {
               />
             </div>
             <FavorisComp />
-            <img src={luna} onClick={handleClick} className="DarkMode" />
+            <img src={luna} onClick={handleClick} className="DarkMode" alt="DarkMode" />
           </div>
           <div className="headerMenu">
             <NavBar />

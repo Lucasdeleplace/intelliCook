@@ -6,7 +6,7 @@ const Search = ({handleSearch, search, handledelete}) => {
     return (
         <div className='allSearch'>
             <input value={search} onChange={handleSearch} type="text" placeholder="Chercher une recette, un ingrédient" className="searchInput"></input>
-            <img src = {loupe} onClick={handledelete} className='searchDelete'/>
+            <img src = {loupe} onClick={handledelete} className='searchDelete' alt='searchDelete'/>
             
         </div>
     );
